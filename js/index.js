@@ -119,6 +119,10 @@ contactEmail.innerText = siteContent["contact"]["email"]
 let footerCopyright = document.querySelector("footer p")
 footerCopyright.innerText = siteContent["footer"]["copyright"]
 
+// navItem1.style.color = 'green'
+let navAll = document.querySelectorAll("header nav a")
+navAll.forEach(navItem => navItem.style.color = 'green')
+
 
 
 
