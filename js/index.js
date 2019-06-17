@@ -98,6 +98,10 @@ contactPhone.innerText = siteContent["contact"]["phone"]
 let contactEmail = document.querySelectorAll(".contact p")[2]
 contactEmail.innerText = siteContent["contact"]["email"]
 
+let footerCopyright = document.querySelector("footer p")
+footerCopyright.innerText = siteContent["footer"]["copyright"]
+
+
 
 
 
