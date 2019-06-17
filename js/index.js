@@ -37,11 +37,13 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
+// Example: Update the img src and alt for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 logo.setAttribute('alt', "Great Idea! Company logo.")
 
+// Select and update the 'header nav a' elements text content
+// Used .querySelectorAll to select the [nth] instance of that element to edit
 let navItem1 = document.querySelectorAll("header nav a")[0]
 navItem1.innerText = siteContent["nav"]["nav-item-1"]
 
@@ -60,104 +62,132 @@ navItem5.innerText = siteContent["nav"]["nav-item-5"]
 let navItem6 = document.querySelectorAll("header nav a")[5]
 navItem6.innerText = siteContent["nav"]["nav-item-6"]
 
+// Select and update the img src and alt for the cta image
 let ctaImg = document.getElementById("cta-img")
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 ctaImg.setAttribute('alt', "Image of a code snippet.")
 
+// Select and update the inner text of h1 element in cta section
 let ctaTextH1 = document.querySelector(".cta .cta-text h1")
 ctaTextH1.innerText = siteContent["cta"]["h1"]
 
+// Select and update the inner text of button element in cta section
 let ctaButton = document.querySelector(".cta .cta-text button")
 ctaButton.innerText = siteContent["cta"]["button"]
 
+// Select and update the inner text of first instance of h4 element in the top-content div
 let featuresH4 = document.querySelector(".top-content .text-content h4")
 featuresH4.innerText = siteContent["main-content"]["features-h4"]
 
+// Select and update the inner text of first instance of p element in the top-content div
 let featuresContent = document.querySelector(".top-content .text-content p")
 featuresContent.innerText = siteContent["main-content"]["features-content"]
 
+// Used .querySelectorAll to select and update the inner text of [nth] instance of h4 element in the top-content div
 let aboutH4 = document.querySelectorAll(".top-content .text-content h4")[1]
 aboutH4.innerText = siteContent["main-content"]["about-h4"]
 
+// Used .querySelectorAll to select and update the inner text of [nth] instance of p element in the top-content div
 let aboutContent = document.querySelectorAll(".top-content .text-content p")[1]
 aboutContent.innerText = siteContent["main-content"]["about-content"]
 
+// Select and update the img src and alt for the middle image
 let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 middleImg.setAttribute('alt', "Image of code snippets across the screen")
 
+// Used .querySelectorAll to select and update the inner text of [nth] instance of h4 element in the bottom-content div
 let servicesH4 = document.querySelectorAll(".bottom-content .text-content h4")[0]
 servicesH4.innerText = siteContent["main-content"]["services-h4"]
 
+// Used .querySelectorAll to select and update the inner text of [nth] instance of p element in the bottom-content div
 let servicesContent = document.querySelectorAll(".bottom-content .text-content p")[0]
 servicesContent.innerText = siteContent["main-content"]["services-content"]
 
+// Used .querySelectorAll to select and update the inner text of [nth] instance of h4 element in the bottom-content div
 let productH4 = document.querySelectorAll(".bottom-content .text-content h4")[1]
 productH4.innerText = siteContent["main-content"]["product-h4"]
 
+// Used .querySelectorAll to select and update the inner text of [nth] instance of p element in the bottom-content div
 let productContent = document.querySelectorAll(".bottom-content .text-content p")[1]
 productContent.innerText = siteContent["main-content"]["product-content"]
 
+// Used .querySelectorAll to select and update the inner text of [nth] instance of h4 element in the bottom-content div
 let visionH4 = document.querySelectorAll(".bottom-content .text-content h4")[2]
 visionH4.innerText = siteContent["main-content"]["vision-h4"]
 
+// Used .querySelectorAll to select and update the inner text of [nth] instance of p element in the bottom-content div
 let visionContent = document.querySelectorAll(".bottom-content .text-content p")[2]
 visionContent.innerText = siteContent["main-content"]["vision-content"]
 
+// Select and update the inner text of h4 element in the contact section
 let contactH4 = document.querySelector(".contact H4")
 contactH4.innerText = siteContent["contact"]["contact-h4"]
 
+// Used .querySelectorAll to select and update the inner text of [nth] instance of p element in the contact section
 let contactAddress = document.querySelectorAll(".contact p")[0]
 contactAddress.innerText = siteContent["contact"]["address"]
 
+// Used .querySelectorAll to select and update the inner text of [nth] instance of p element in the contact section
 let contactPhone = document.querySelectorAll(".contact p")[1]
 contactPhone.innerText = siteContent["contact"]["phone"]
 
+// Used .querySelectorAll to select and update the inner text of [nth] instance of p element in the contact section
 let contactEmail = document.querySelectorAll(".contact p")[2]
 contactEmail.innerText = siteContent["contact"]["email"]
 
+// Select and update the inner text of p element in the footer section
 let footerCopyright = document.querySelector("footer p")
 footerCopyright.innerText = siteContent["footer"]["copyright"]
 
-// navItem1.style.color = 'green'
+// Define variable and assign a NodeList of all elements of type a within the nav and header section
 let navAll = document.querySelectorAll("header nav a")
+// Use forEach() method on the Nodelist to loop through each element and assign each element the style color property of green
 navAll.forEach(navItem => navItem.style.color = 'green')
 
-// find existing element to work with
+// Find existing element to work with
 const ctaTextDiv = document.querySelector('.cta .cta-text')
 
-// create new button element
+// Create new button element
 const flipButton = document.createElement("button")
-// update button text content
+
+// Update button elements text content
 flipButton.innerText = "Flip Mode"
-// place button at end of cta-text div
+
+// Place button at end of cta-text div
 ctaTextDiv.appendChild(flipButton)
 
-// create new button element
+// Create new button element
 const resetButton = document.createElement("button")
-// update button text content
+
+// Update button elements text content
 resetButton.innerText = "Reset"
-// place button at end of cta-text div
+
+// Place button at end of cta-text div
 ctaTextDiv.appendChild(resetButton)
 
-// find existing element to work with
+// Find existing element to work with
 const footerSection = document.querySelector('footer')
 
-// create new p element
+// Create new p element
 const helloP = document.createElement("p")
 
-// update button text content
+// Update p elements text content
 helloP.innerText = "Hello!"
 
-// place p at start of footer section
+// Place p at start of footer section
 footerSection.prepend(helloP)
-// give p a bit of padding below it
+
+// Add bottom padding to the p element
 helloP.style.paddingBottom = '5px'
 
+// Set up a function that will be called when flipButton button is clicked
 flipButton.addEventListener ('click', flipButtonClick)
 
+// Function to run upon associated .addEventListener being activated
 function flipButtonClick() {
-  
+
+  // Add/edit the flexbox properties of containers/sections of content
   const headerSec = document.querySelector('header')
   headerSec.style.flexDirection = 'row-reverse'
   headerSec.style.justifyContent = 'space-between'
@@ -183,9 +213,13 @@ function flipButtonClick() {
   contactSection.style.alignItems = 'flex-end'
 }
 
+// Set up a function that will be called when resetButton button is clicked
 resetButton.addEventListener ('click', resetButtonClick)
 
+// Function to run upon associated .addEventListener being activated
 function resetButtonClick() {
+
+  // Add/edit the flexbox properties of containers/sections to reset their content to original state
   const headerSec = document.querySelector('header')
   headerSec.style.flexDirection = 'row'
 
