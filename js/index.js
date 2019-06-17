@@ -64,6 +64,34 @@ aboutH4.innerText = siteContent["main-content"]["about-h4"]
 let aboutContent = document.querySelectorAll(".top-content .text-content p")[1]
 aboutContent.innerText = siteContent["main-content"]["about-content"]
 
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+middleImg.setAttribute('alt', "Image of code snippets across the screen")
+
+let servicesH4 = document.querySelectorAll(".bottom-content .text-content h4")[0]
+servicesH4.innerText = siteContent["main-content"]["services-h4"]
+
+let servicesContent = document.querySelectorAll(".bottom-content .text-content p")[0]
+servicesContent.innerText = siteContent["main-content"]["services-content"]
+
+let productH4 = document.querySelectorAll(".bottom-content .text-content h4")[1]
+productH4.innerText = siteContent["main-content"]["product-h4"]
+
+let productContent = document.querySelectorAll(".bottom-content .text-content p")[1]
+productContent.innerText = siteContent["main-content"]["product-content"]
+
+let visionH4 = document.querySelectorAll(".bottom-content .text-content h4")[2]
+visionH4.innerText = siteContent["main-content"]["vision-h4"]
+
+let visionContent = document.querySelectorAll(".bottom-content .text-content p")[2]
+visionContent.innerText = siteContent["main-content"]["vision-content"]
+
+
+
+
+
+
+
 
 
 
