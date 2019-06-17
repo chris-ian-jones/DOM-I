@@ -123,6 +123,43 @@ footerCopyright.innerText = siteContent["footer"]["copyright"]
 let navAll = document.querySelectorAll("header nav a")
 navAll.forEach(navItem => navItem.style.color = 'green')
 
+// find existing element to work with
+const ctaTextDiv = document.querySelector('.cta .cta-text')
+
+// create new button element
+const flipButton = document.createElement("button")
+// update button text content
+flipButton.innerText = "Flip Mode"
+// place button at end of cta-text div
+ctaTextDiv.appendChild(flipButton)
+
+// create new button element
+const resetButton = document.createElement("button")
+// update button text content
+resetButton.innerText = "Reset"
+// place button at end of cta-text div
+ctaTextDiv.appendChild(resetButton)
+
+// find existing element to work with
+const footerSection = document.querySelector('footer')
+
+// create new p element
+const helloP = document.createElement("p")
+
+// update button text content
+helloP.innerText = "Hello!"
+
+// place p at start of footer section
+footerSection.prepend(helloP)
+// give p a bit of padding below it
+helloP.style.paddingBottom = '5px'
+
+
+
+
+
+
+
 
 
 
