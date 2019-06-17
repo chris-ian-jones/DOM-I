@@ -154,6 +154,53 @@ footerSection.prepend(helloP)
 // give p a bit of padding below it
 helloP.style.paddingBottom = '5px'
 
+flipButton.addEventListener ('click', flipButtonClick)
+
+function flipButtonClick() {
+  const headerSec = document.querySelector('header')
+  headerSec.style.flexDirection = 'row-reverse'
+
+  const headerNav = document.querySelector('header nav')
+  headerNav.style.flexDirection = 'row-reverse'
+
+  const ctaSec = document.querySelector('.cta')
+  ctaSec.style.flexDirection = 'row-reverse'
+
+  const topContentSection = document.querySelector('.top-content')
+  topContentSection.style.flexDirection = 'row-reverse'
+
+  const bottomContentSection = document.querySelector('.bottom-content')
+  bottomContentSection.style.flexDirection = 'row-reverse'
+
+  const contactSection = document.querySelector('.contact')
+  contactSection.style.display = 'flex'
+  contactSection.style.flexDirection = 'column'
+  contactSection.style.alignItems = 'flex-end'
+}
+
+resetButton.addEventListener ('click', resetButtonClick)
+
+function resetButtonClick() {
+  const headerSec = document.querySelector('header')
+  headerSec.style.flexDirection = 'row'
+
+  const headerNav = document.querySelector('header nav')
+  headerNav.style.flexDirection = 'row'
+
+  const ctaSec = document.querySelector('.cta')
+  ctaSec.style.flexDirection = 'row'
+
+  const topContentSection = document.querySelector('.top-content')
+  topContentSection.style.flexDirection = 'row'
+
+  const bottomContentSection = document.querySelector('.bottom-content')
+  bottomContentSection.style.flexDirection = 'row'
+
+  const contactSection = document.querySelector('.contact')
+  contactSection.style.display = ''
+  contactSection.style.flexDirection = ''
+  contactSection.style.alignItems = ''
+}
 
 
 
