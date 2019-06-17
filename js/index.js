@@ -140,6 +140,8 @@ contactEmail.innerText = siteContent["contact"]["email"]
 const footerCopyright = document.querySelector("footer p")
 footerCopyright.innerText = siteContent["footer"]["copyright"]
 
+// Stretch: integrate a button that can update content on the site with a click
+
 // Define navNodeList variable and assign to it a NodeList of all 'a' elements within the nav and header section
 const navNodeList = document.querySelectorAll("header nav a")
 // Use forEach() method on the Nodelist to loop through each 'a' element and assign them the style color property of green
