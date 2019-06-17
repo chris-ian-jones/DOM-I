@@ -42,6 +42,24 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 logo.setAttribute('alt', "Great Idea! Company logo.")
 
+let navItem1 = document.querySelectorAll("header nav a")[0]
+navItem1.innerText = siteContent["nav"]["nav-item-1"]
+
+let navItem2 = document.querySelectorAll("header nav a")[1]
+navItem2.innerText = siteContent["nav"]["nav-item-2"]
+
+let navItem3 = document.querySelectorAll("header nav a")[2]
+navItem3.innerText = siteContent["nav"]["nav-item-3"]
+
+let navItem4 = document.querySelectorAll("header nav a")[3]
+navItem4.innerText = siteContent["nav"]["nav-item-4"]
+
+let navItem5 = document.querySelectorAll("header nav a")[4]
+navItem5.innerText = siteContent["nav"]["nav-item-5"]
+
+let navItem6 = document.querySelectorAll("header nav a")[5]
+navItem6.innerText = siteContent["nav"]["nav-item-6"]
+
 let ctaImg = document.getElementById("cta-img")
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 ctaImg.setAttribute('alt', "Image of a code snippet.")
