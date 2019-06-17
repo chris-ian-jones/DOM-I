@@ -157,11 +157,16 @@ helloP.style.paddingBottom = '5px'
 flipButton.addEventListener ('click', flipButtonClick)
 
 function flipButtonClick() {
+  
   const headerSec = document.querySelector('header')
   headerSec.style.flexDirection = 'row-reverse'
+  headerSec.style.justifyContent = 'space-between'
 
   const headerNav = document.querySelector('header nav')
   headerNav.style.flexDirection = 'row-reverse'
+  
+  const headerImg = document.querySelector('header img')
+  headerImg.style.marginLeft = '0px'
 
   const ctaSec = document.querySelector('.cta')
   ctaSec.style.flexDirection = 'row-reverse'
