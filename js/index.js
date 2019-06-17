@@ -52,4 +52,18 @@ ctaTextH1.innerText = siteContent["cta"]["h1"]
 let ctaButton = document.querySelector(".cta .cta-text button")
 ctaButton.innerText = siteContent["cta"]["button"]
 
+let featuresH4 = document.querySelector(".top-content .text-content h4")
+featuresH4.innerText = siteContent["main-content"]["features-h4"]
+
+let featuresContent = document.querySelector(".top-content .text-content p")
+featuresContent.innerText = siteContent["main-content"]["features-content"]
+
+let aboutH4 = document.querySelectorAll(".top-content .text-content h4")[1]
+aboutH4.innerText = siteContent["main-content"]["about-h4"]
+
+let aboutContent = document.querySelectorAll(".top-content .text-content p")[1]
+aboutContent.innerText = siteContent["main-content"]["about-content"]
+
+
+
 
