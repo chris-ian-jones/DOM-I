@@ -140,10 +140,10 @@ contactEmail.innerText = siteContent["contact"]["email"]
 const footerCopyright = document.querySelector("footer p")
 footerCopyright.innerText = siteContent["footer"]["copyright"]
 
-// Define variable and assign a NodeList of all elements of type a within the nav and header section
-const navAll = document.querySelectorAll("header nav a")
-// Use forEach() method on the Nodelist to loop through each element and assign each element the style color property of green
-navAll.forEach(navItem => navItem.style.color = 'green')
+// Define navNodeList variable and assign to it a NodeList of all 'a' elements within the nav and header section
+const navNodeList = document.querySelectorAll("header nav a")
+// Use forEach() method on the Nodelist to loop through each 'a' element and assign them the style color property of green
+navNodeList.forEach(navElement => navElement.style.color = 'green')
 
 // Find existing element to work with
 const ctaTextDiv = document.querySelector('.cta .cta-text')
