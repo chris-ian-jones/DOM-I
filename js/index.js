@@ -86,6 +86,18 @@ visionH4.innerText = siteContent["main-content"]["vision-h4"]
 let visionContent = document.querySelectorAll(".bottom-content .text-content p")[2]
 visionContent.innerText = siteContent["main-content"]["vision-content"]
 
+let contactH4 = document.querySelector(".contact H4")
+contactH4.innerText = siteContent["contact"]["contact-h4"]
+
+let contactAddress = document.querySelectorAll(".contact p")[0]
+contactAddress.innerText = siteContent["contact"]["address"]
+
+let contactPhone = document.querySelectorAll(".contact p")[1]
+contactPhone.innerText = siteContent["contact"]["phone"]
+
+let contactEmail = document.querySelectorAll(".contact p")[2]
+contactEmail.innerText = siteContent["contact"]["email"]
+
 
 
 
