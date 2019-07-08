@@ -1,8 +1,8 @@
-//grab html divs for seconds digits
+//grab html divs for seconds digits (bug - need to be fixed later)
 const timerSecondsDoubleDigit = document.querySelector('.digit:nth-of-type(1)')
 const timerSecondsSingleDigit = document.querySelector('.digit:nth-of-type(2)')
 
-//grab html divs for milliseconds digits
+//grab html divs for milliseconds digits (bug - need to be fixed later)
 const timeMsDoubleDigit = document.querySelector('.digit:nth-of-type(4)')
 const timeMsSingleDigit = document.querySelector('.digit:nth-of-type(5)')
 
@@ -69,9 +69,7 @@ function countSecondTimer() {
 //         timerSecondOnes = 0
 //         timerMsTens.textContent = sCount
 //         timerSecondOnes.textContent = timerSecondOnes
-//         // console.log(sCount)
 //     } else if (msCount === 90) {
-//         msCount = msCount + 10
 //         timerMsTens.textContent = msCount   
 //         ++sCount
 //         timerSecondOnes.textContent = sCount
